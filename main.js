@@ -3,6 +3,8 @@
    const historia3= document.getElementById("container-texto3");
    const historia4= document.getElementById("container-texto4");
    const historia5= document.getElementById("container-texto5");
+   const historia6= document.getElementById("container-texto6");
+   
    
    let numeroPagina=1;
 
@@ -16,7 +18,7 @@ function siguientePagina(e){
 
    window.scrollTo(0,0);
 
-   if(numeroPagina>5){
+   if(numeroPagina>6){
       numeroPagina=1;
       historia5.style.display="none";
       historia1.style.display="";
@@ -36,6 +38,17 @@ function ocultarHistorias(){
    historia3.style.display="none"
    historia4.style.display="none"
    historia5.style.display="none"
+   historia6.style.display="none"
+}
+
+function Pagina5(){
+   ocultarHistorias();
+   historia1.style.display="none"
+   historia5.style.display=""
 }
 
 
+function Pagina1(){
+   ocultarHistorias();
+   historia1.style.display=""
+}
